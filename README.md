@@ -131,19 +131,17 @@ the same number. For example, cldr-data-bower `26.0.0`, `26.0.1`, or `26.0.1`
 all map to Unicode CLDR JSON `v26`. So, simply use major (and possibly minor,
 e.g., 23.1) when defining it, e.g., `"cldr-data": ">=26"`.
 
-What really matters is that bower is able to do its job, i.e., dependency
-management.
+What really matters is that this approach allows bower to do its job, i.e.,
+dependency management.
 
-Exemplifying, an end application that depends on variety of i18n libraries, for
-example Foo (that depends on cldr-data >= 25) and Bar (that depends on cldr-data
-\>= 23.1), is able to have bower to manage and to flatten its overall CLDR data
-dependency, which in this case will come up with the newest available CLDR JSON
-data bigger or equal to twenty five (>=25).
+Exemplifying, an end application that depends on Foo (that depends on cldr-data
+\>= 25) and Bar (that depends on cldr-data \>= 23.1), can use bower to install
+and to flatten its `cldr-data` dependency. In this case, it's any version bigger
+or equal to twenty five (>=25).
 
-At this point, bower will install on the the appropriate Unicode CLDR JSON data
-given the dependency resolutions into the `./bower_components/cldr-data`
-directory, which will only carry instructions on where the zip files for
-download are.
+At this point, bower installs the right `cldr-data` version into
+`./bower_components/cldr-data`, which carries instructions on how to download
+the CLDR JSON data.
 
 A postinstall script, like cldr-data-downloader, must be used to actually
 populate the above skeleton.
