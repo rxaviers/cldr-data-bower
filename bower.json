@@ -1,0 +1,25 @@
+{
+  "name": "cldr-data-example-library-foo",
+  "main": "foo.js",
+  "version": "0.0.1",
+  "homepage": "https://github.com/rxaviers/cldr-data-bower",
+  "authors": [
+    "Rafael Xavier de Souza <rxaviers@gmail.com>"
+  ],
+  "description": "Bower module for Unicode CLDR JSON data",
+  "moduleType": [
+    "amd",
+    "globals"
+  ],
+  "keywords": [
+    "Unicode",
+    "CLDR",
+    "JSON",
+    "data"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "cldr-data": ">=25",
+    "cldrjs": "*"
+  }
+}
