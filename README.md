@@ -18,22 +18,6 @@ Bonus goals
 
 [Npm's cldr-data]: https://github.com/rxaviers/cldr-data-npm
 
-A quick example is an end application that has two i18n dependencies (see table)
-and wants them in a flat structure (see tree).
-
-| name | dependencies |
-| --- | --- |
-| My end application (`app.js`) | `foo-number-format` and<br>`bar-date-format` |
-| FooNumberFormat library |  `cldr-data >= 25` |
-| BarDateFormat library | `cldr-data >= 23.1` |
-
-    .
-    ├── app.js
-    └── bower_components/
-        ├── cldr-data/ (v26)
-        ├── foo-number-format/
-        └── bar-date-format/
-
 
 ## Usage
 
@@ -114,7 +98,7 @@ version of CLDR data. For your convinience, use cldr-data in conjunction of
 [cldr.js][].
 
 You can find more details (and give it a try) by switching to the
-[Foo Library Example][] branch.
+[Foo Number Format Library Example][] branch.
 
 [cldr.js]: https://github.com/rxaviers/cldrjs
 [Foo Number Format Library Example]: https://github.com/rxaviers/cldr-data-bower/tree/example-library-foo
