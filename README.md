@@ -47,7 +47,7 @@ Unicode CLDR JSON data for you.
 {
   "scripts": {
     "preinstall": "npm install cldr-data-downloader",
-    "postinstall": "./node_modules/cldr-data-downloader/bin/download.js -i bower_components/cldr-data/index.json -o bower_components/cldr-data/"
+    "postinstall": "node ./node_modules/cldr-data-downloader/bin/download.js -i bower_components/cldr-data/index.json -o bower_components/cldr-data/"
   }
 }
 ```
