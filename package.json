@@ -1,0 +1,44 @@
+{
+  "name": "cldr-data-bower",
+  "version": "0.0.1-pre",
+  "keywords": [
+    "Unicode",
+    "CLDR",
+    "JSON",
+    "data",
+    "AMD",
+    "loader",
+    "requirejs",
+    "plugin"
+  ],
+  "description": "An AMD loader plugin for loading CLDR JSON data",
+  "homepage": "https://github.com/rxaviers/cldr-data-bower",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/rxaviers/cldr-data-bower.git"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/rxaviers/cldr-data-bower/blob/master/LICENSE-MIT"
+    }
+  ],
+  "author": {
+    "name": "Rafael Xavier de Souza",
+    "email": "rxaviers@gmail.com",
+    "url": "http://rafael.xavier.blog.br"
+  },
+  "main": "index.js",
+  "scripts": {
+    "test": "grunt"
+  },
+  "peerDependencies": {
+    "cldr-data": ">=25.x"
+  },
+  "devDependencies": {
+    "grunt": "0.4.x",
+    "grunt-contrib-jshint": "0.10.x",
+    "grunt-dco": "0.0.3",
+    "matchdep": "*"
+  }
+}
