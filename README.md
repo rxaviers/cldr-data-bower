@@ -40,8 +40,10 @@ normally do. For example, let's say they are FooNumberFormat and BarDateFormat.
 }
 ```
 
-On your `.bowerrc` file, define script hooks to actually fetch the correct
-Unicode CLDR JSON data for you.
+If you don't have a `.bowerrc` file then create one.  On your `.bowerrc` file, define script hooks to actually fetch the correct
+Unicode CLDR JSON data for you.  With this in place, when you enter `bower install` the lovely `cldr-data` will be included as part of the installation.
+
+**Important:** If you have already installed your bower dependencies prior to defining your `.bowerrc` hook then subsequently entering `bower install` *will not install `cldr-data`*. 
 
 ```javascript
 {
