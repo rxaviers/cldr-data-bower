@@ -1,3 +1,5 @@
+# DEPRECATED, use npm cldr-data package instead
+
 # Bower's cldr-data
 
 Bower module for [Unicode CLDR JSON][] data.
